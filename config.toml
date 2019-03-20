@@ -1,0 +1,365 @@
+# Site settings
+baseurl = "https://theeventarchitect.com/"
+languageCode = "en-us"
+title = "The Event Architect"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Event Planner"
+  description = "Make your day an eventful success with the best event planning company in Uganda. We do all the planning so that your event will just work"
+  keywords = "The Event Architect, Uganda, event planning uganda, event planner uganda, your's truly planner"      
+  copyright = "The Event Architect"
+  designer = "Jonathan Musiitwa"
+  distribution = "Global"
+  city = "Kampala"
+  country = "Uganda"
+  email = "theeventarchitectug@gmail.com "
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "brand_icon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation
+  [params.navigation]
+    brand = "The Event Architect"
+    #  logo = "brand.jpg"
+    about = "About"
+    portfolio = "Portfolio" 
+    services = "Services"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    # [[menu.postpend]]
+    #   url = "http://gohugo.io"
+    #   name = "External link"
+    #   weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Meet The Event Architect"
+    subtitle = "Your Experience Agency"
+    buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    # subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [[params.services.row]]
+
+
+    [[params.services.row.list]]
+      icon = "fa-laptop"
+      title = "Brand Fulfillment"
+      description = "Event Marketing,Branding, Creative Design, Promotions"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "Culinary"
+      description = "All drinks and food arrangement"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "Decor and Design"
+      description = "Center-piece Design, Floral Pattern Design, Napkin Folding Design"  
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "Event Management"
+      description = "Concept Development, Staff, Event Consultancy, Venue Bookings, Car Hire, Logistics, Tent/Table/Chair Hire"  
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "Video and Photography"
+      description = "Video production, Live feed & Photography."
+      url = "#"
+    
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "Audio/Visual division & Equipment"
+      description = "Public Address/Sound System, Disc Jockey(DJ), VJ/MC, Image Projection, Lighting, Stage"
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      services = "Services"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = false
+    title = "About"
+    subtitle = "Who we are"
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = "2009-2011"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = "March 2011"
+      title = "An Agency is Born"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = "December 2012"
+      title = "Our Humble Beginnings"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "July 2014"
+      title = "Phase Two Expansion"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Our amazing team"
+    subtitle = "Because teamwork makes the dream work"
+    # description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "team1.jpg"
+      name = "Arnold Magyezi"
+      position = "Managing Director"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "team2.jpg"
+      name = "Patricia Tusuubirae"
+      position = "Media Executive"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "team3.jpg"
+      name = "Jonathan Kisukye"
+      position = "Financial Manager"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+      [[params.team.members]]
+      img = "team5.jpg"
+      name = "Ivy Chimulwa"
+      position = "Public and Client Relations"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+      [[params.team.members]]
+      img = "2.jpg"
+      name = "Brian Tamale"
+      position = "Accounts and Logistics"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+      [[params.team.members]]
+      img = "3.jpg"
+      name = "Racheal Tendo"
+      position = "Creative Lead"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = false
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Let us make your day one you shall remember."
+    buttonText = "Send message"
+    # netlify = true
+
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "theeventarchitectug@gmail.com"
+
+    #Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at theeventarchitectug@gmail.com instead."
+
+    [params.contact.captcha]
+      # sitekey = ""
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "eventarch_forms"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Created for The Event Architect by Jonathan Musiitwa"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/eventarch_ug"
+      title = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/eventarch/"
+      title = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-instagram"
+      link = "https://www.instagram.com/theeventarchitect/"
+      title = "Instagram"
+
+    [[params.footer.quicklinks]]
+      text = "P.O BOX: 8307, Kampala, Uganda"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "+ 256 7788 70358"
+      link = "tel:+256778870358"
+
+    [[params.footer.quicklinks]]
+      text = "+ 256 7011 59168"
+      link = "tel:+256701159168" 
+
+    [[params.footer.quicklinks]]
+      text = "theeventarchitectug@gmail.com"
+      link = "mailto:theeventarchitectug@gmail.com"       
+
+
+
